@@ -1,0 +1,17 @@
+REGISTER QUERY test AS
+
+PREFIX om-owl: <http://knoesis.wright.edu/ssw/ont/sensor-observation.owl#>
+PREFIX weather: <http://knoesis.wright.edu/ssw/ont/weather.owl#>
+
+SELECT ?sensor ?ob1
+FROM STREAM <http://ex.org/streams/test> [RANGE ${WSIZE} STEP ${WSLIDE}] WHERE {
+    ?obs om-owl:procedure sens-obs:System_C1190 ;
+         om-owl:observedProperty weather:_AirTemperature ;
+         om-owl:result ?res .
+    ?res om-owl:floatValue ?value .
+    ?ob1 om-owl:procedure ?sensor ;
+         om-owl:observedProperty weather:_AirTemperature ;
+         om-owl:result ?res1 .
+    ?res om-owl:floatValue ?value1 .
+    FILTER(?value1 > ?value)
+}

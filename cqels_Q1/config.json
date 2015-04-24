@@ -1,0 +1,15 @@
+{
+    "inputstream": "csrbench-dataset.n3t",
+    "vars": {
+        "TEMP": "80",
+        "WSIZE": "10s",
+        "WSLIDE": "10s",
+        "WPOLICY": "oncontentchange"
+    },
+    "tests": [
+        {
+            "name": "1",
+            "graceful": "false"
+        }
+    ]
+}

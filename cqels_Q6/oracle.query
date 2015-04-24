@@ -1,0 +1,16 @@
+PREFIX om-owl: <http://knoesis.wright.edu/ssw/ont/sensor-observation.owl#>
+PREFIX weather: <http://knoesis.wright.edu/ssw/ont/weather.owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?sensor ?ob1 ?value1 ?obs {
+    ?ob1 om-owl:procedure ?sensor ;
+         om-owl:observedProperty weather:_AirTemperature ;
+         om-owl:result ?res1 .
+    ?res1 om-owl:floatValue ?value1 .
+    ?obs om-owl:procedure ?sensor ;
+         om-owl:observedProperty weather:_AirTemperature ;
+         om-owl:result ?res .
+    ?res om-owl:floatValue ?value .
+    FILTER(?value1 > ?value)
+    FILTER(?value > ${VALUE})
+}

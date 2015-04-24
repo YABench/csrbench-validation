@@ -1,0 +1,16 @@
+{
+    "inputstream": "csrbench-dataset.n3t",
+    "vars": {
+        "VALUE_MIN": "24",
+        "VALUE_MAX": "49",
+        "WSIZE": "10s",
+        "WSLIDE": "10s",
+        "WPOLICY": "onwindowclose"
+    },
+    "tests": [
+        {
+            "name": "1",
+            "graceful": "false"
+        }
+    ]
+}
