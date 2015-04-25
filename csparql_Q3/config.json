@@ -1,5 +1,4 @@
 {
-    "inputstream": "csrbench-dataset.n3t",
     "vars": {
         "VALUE_MIN": "24",
         "VALUE_MAX": "49",

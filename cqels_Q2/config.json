@@ -1,5 +1,4 @@
 {
-    "inputstream": "csrbench-dataset.n3t",
     "vars": {
         "TEMP": "80",
         "WSIZE": "1s",
