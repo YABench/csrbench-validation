@@ -7,5 +7,6 @@ SELECT ?sensor ?obs {
          om-owl:procedure ?sensor ;
          om-owl:result ?res .
     ?res om-owl:floatValue ?value .
-    FILTER(?value > ${TEMP})
+    FILTER(?value < ${VALUE_MAX})
+    FILTER(?value > ${VALUE_MIN})
 }

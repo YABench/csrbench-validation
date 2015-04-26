@@ -9,5 +9,5 @@ FROM STREAM <http://ex.org/streams/test> [RANGE ${WSIZE} STEP ${WSLIDE}] WHERE {
          om-owl:procedure ?sensor ;
          om-owl:result ?res .
     ?res om-owl:floatValue ?value .
-    FILTER(?value < ${VALUE})
+    FILTER(?value > ${VALUE})
 }

@@ -1,6 +1,6 @@
 {
     "vars": {
-        "VALUE": "80",
+        "VALUE": "75",
         "WSIZE": "5s",
         "WSLIDE": "5s",
         "WPOLICY": "onwindowclose"

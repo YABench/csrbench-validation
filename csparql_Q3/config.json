@@ -2,8 +2,8 @@
     "vars": {
         "VALUE_MIN": "24",
         "VALUE_MAX": "49",
-        "WSIZE": "10s",
-        "WSLIDE": "10s",
+        "WSIZE": "4s",
+        "WSLIDE": "4s",
         "WPOLICY": "onwindowclose"
     },
     "tests": [

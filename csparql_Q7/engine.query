@@ -2,6 +2,7 @@ REGISTER QUERY test AS
 
 PREFIX om-owl: <http://knoesis.wright.edu/ssw/ont/sensor-observation.owl#>
 PREFIX weather: <http://knoesis.wright.edu/ssw/ont/weather.owl#>
+PREFIX sens-obs: <http://knoesis.wright.edu/ssw/>
 
 SELECT ?sensor ?ob1
 FROM STREAM <http://ex.org/streams/test> [RANGE ${WSIZE} STEP ${WSLIDE}] WHERE {
