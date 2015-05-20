@@ -5,6 +5,7 @@
         "WSLIDE": "5s",
         "WPOLICY": "oncontentchange"
     },
+    "singleresult": "false",
     "tests": [
         {
             "name": "1",
